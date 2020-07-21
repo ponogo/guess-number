@@ -28,3 +28,15 @@ while play == True:
         print("Correct")
         won = True
         break
+  if won == True:
+    print("Congratulations you won at " + str(2-tries) + " tries")
+  else:
+    print("no more tries the number was " + str(comp_num))
+  answer = input("do you want to play again: Y or N ")
+  if answer.upper() == "N":
+    print("BYE")
+    play = False
+  else:
+    win = False
+    tries = 3  
+    comp_num = random.randint(0, 10) 
