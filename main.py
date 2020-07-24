@@ -27,9 +27,10 @@ while play == True:
       else:
         print("Correct")
         won = True
+        tries -= 1
         break
   if won == True:
-    print("Congratulations you won at " + str(2-tries) + " tries")
+    print("Congratulations you won after " + str(3-tries) + " tries")
   else:
     print("no more tries the number was " + str(comp_num))
   answer = input("do you want to play again: Y or N ")
